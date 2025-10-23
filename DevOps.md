@@ -28,5 +28,5 @@
 | IaC                    | [[Terraform]], [[Ansible]]                                  |
 | Мониторинг             | [[Prometheus]], [[Grafana]]                                 |
 | Логи                   | [[ELK]] ([[Elasticsearch]], Logstash/Fluentd, Kibana)       |
-| [[Networking & Linux]] | [[Ubuntu]]                                                  |
+| [[Networking & Linux]] | [[Ubuntu]], [[Nginx]]                                       |
 | [[Базы данных]]        | [[PostgreSQL]], [[MySQL]], [[MongoDB]], [[Redis]]           |

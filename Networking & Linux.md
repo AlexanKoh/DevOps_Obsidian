@@ -47,6 +47,9 @@
 | `journalctl -u myapp.service`                                  | логи конкретного сервиса                                                                        |
 | `journalctl --since "10 min ago"`                              | за последние 10 минут                                                                           |
 | `ip route show`                                                | показать таблицу маршрутизации                                                                  |
+| sudo useradd -m -s /bin/bash alice                             | создание нового пользователя                                                                    |
+| sudo groupadd devops                                           | создание группы                                                                                 |
+| sudo usermod -aG devops alice                                  | добавление пользователя в группу                                                                |
 |                                                                |                                                                                                 |
 
 ## Модель OSI

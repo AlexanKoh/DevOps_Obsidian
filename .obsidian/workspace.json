@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Networking & Linux.md",
+                "file": "DevOps.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Networking & Linux"
+              "title": "DevOps"
             }
           }
         ]
@@ -171,6 +171,7 @@
   },
   "active": "0590bc22a8124ad3",
   "lastOpenFiles": [
+    "Nginx.md",
     "DevOps.md",
     "Networking & Linux.md",
     "().md",
