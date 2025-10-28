@@ -22,7 +22,7 @@
 
 | Категория              | Примеры                                                     |
 | ---------------------- | ----------------------------------------------------------- |
-| Репозиторий            | [[Git]], [[GitHub]], [[GitLab]]                             |
+| Репозиторий            | [[Git_GitHub]], [[GitLab]]                                  |
 | CI/CD                  | [[Jenkins]], [[GitHub Actions]], [[GitLab CI]], [[Argo CD]] |
 | Контейнеры             | [[Docker]], [[Kubernetes]], [[Helm]]                        |
 | IaC                    | [[Terraform]], [[Ansible]]                                  |
