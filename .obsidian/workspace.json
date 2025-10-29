@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Git_GitHub.md",
+                "file": "Базы данных.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Git_GitHub"
+              "title": "Базы данных"
             }
           }
         ],
@@ -187,6 +187,7 @@
   "active": "babd18a74e2d6af6",
   "lastOpenFiles": [
     "DevOps.md",
+    "Базы данных.md",
     "Git_GitHub.md",
     "Git",
     "Docker.md",
