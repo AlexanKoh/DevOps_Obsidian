@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Terraform.md",
+                "file": "Prometheus.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Terraform"
+              "title": "Prometheus"
             }
           }
         ]
@@ -172,6 +172,7 @@
   "active": "6b29c6c5833b90ab",
   "lastOpenFiles": [
     "DevOps.md",
+    "Prometheus.md",
     "Terraform.md",
     "Ansible.md",
     "Docker.md",
