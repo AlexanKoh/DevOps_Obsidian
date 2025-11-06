@@ -97,15 +97,15 @@ end
 
 #  **Команды Vagrant**
 
-|Команда|Что делает|
-|---|---|
-|`vagrant up`|Создать и запустить VM|
-|`vagrant halt`|Остановить VM|
-|`vagrant destroy`|Удалить VM|
-|`vagrant ssh`|Зайти внутрь VM|
-|`vagrant reload`|Перезагрузить, применяя изменения Vagrantfile|
-|`vagrant provision`|Заново выполнить provisioning|
-|`vagrant status`|Показать состояние|
+| Команда             | Что делает                                    |
+| ------------------- | --------------------------------------------- |
+| `vagrant up`        | Создать и запустить VM                        |
+| `vagrant halt`      | Остановить VM                                 |
+| `vagrant destroy`   | Удалить VM                                    |
+| `vagrant ssh`       | Зайти внутрь VM                               |
+| `vagrant reload`    | Перезагрузить, применяя изменения Vagrantfile |
+| `vagrant provision` | Заново выполнить provisioning                 |
+| `vagrant status`    | Показать состояние                            |
 
 #  **Сетевые режимы**
 
