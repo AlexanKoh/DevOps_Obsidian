@@ -5,7 +5,6 @@ GitLab — это платформа для DevOps полного цикла: о
 # Основные компоненты GitLab
 
 ## 1. Git-репозитории
-
 - хранение кода
 - просмотр коммитов, diff, веток и тегов
 - Merge Requests (MR)
@@ -13,9 +12,7 @@ GitLab — это платформа для DevOps полного цикла: о
 - защищённые ветки
 
 ## 2. GitLab CI/CD
-
 Пайплайн описывается в файле:
-
 ```yaml
 # .gitlab-ci.yml
 stages:
@@ -25,7 +22,6 @@ stages:
 ```
 
 CI/CD обеспечивает:
-
 - выполнение заданий через runners
 - логи выполнения
 - управление артефактами
@@ -33,17 +29,14 @@ CI/CD обеспечивает:
 - поддержку Docker, Kubernetes, Terraform, Ansible и многого другого
 
 ## 3. GitLab Runner
-
 Агент для выполнения CI/CD задач.
 
 Типы:
-
 - shared
 - project
 - self-hosted
 
 Режимы выполнения:
-
 - shell
 - Docker
 - Docker-in-Docker
@@ -56,47 +49,37 @@ CI/CD обеспечивает:
 Используются для организации проектов, управления правами и общими настройками.
 
 ## Уровни доступа
-
 - Guest
 - Reporter
 - Developer
 - Maintainer
 - Owner
 ## Issue tracking
-
 Встроенная система управления задачами:
-
 - kanban-доски
 - эпики
 - задачи
 - milestones
 
 # DevOps-функции GitLab
-
 GitLab покрывает весь DevOps-цикл.
 
 ## Plan
-
 Issues, epics, roadmaps
 
 ## Code
-
 Git, review
 
 ## Test
-
 CI/CD, автотесты
 
 ## Secure
-
 SAST, DAST, Dependency Scanning
 
 ## Deploy
-
 AutoDevOps, деплой в Kubernetes, Helm charts
 
 ## Monitor
-
 Интеграция с Prometheus, alerts
 
 # Регистры GitLab
@@ -104,19 +87,16 @@ AutoDevOps, деплой в Kubernetes, Helm charts
 ## 1. Container Registry
 
 Хранилище Docker-образов:
-
 ```
 registry.gitlab.com/namespace/project/app:tag
 ```
 
 ## 2. Package Registry
-
 Поддерживает npm, Maven, PyPI, NuGet, Conan и другие форматы.
 
 # GitLab и Kubernetes
 
 GitLab умеет:
-
 - деплоить в Kubernetes
 - управлять Helm-чартами
 - использовать GitLab Agent for Kubernetes

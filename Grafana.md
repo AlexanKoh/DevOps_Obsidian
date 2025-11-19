@@ -16,7 +16,6 @@ Grafana умеет подключаться к множеству источни
 | Grafana Cloud | SaaS-версия для мониторинга без развёртывания сервера                        |
 
 ##  Архитектура Grafana
-
 ```
         ┌────────────────────────┐
         │      Users / Admins     │
@@ -51,7 +50,6 @@ Grafana не хранит метрики у себя.
 ##  Настройка Grafana для работы с Prometheus
 
 ### 1. Установка (например, через Docker)
-
 ```yaml
 version: '3.7'
 services:
@@ -78,7 +76,6 @@ services:
 ### 2. Добавление Prometheus как Data Source
 
 После запуска Grafana:
-
 1. Перейди в **Configuration → Data Sources → Add data source**
 2. Выбери **Prometheus**
 3. Укажи URL (если через Docker Compose):
@@ -90,18 +87,15 @@ services:
 ### 3. Создание дашборда
 
 Можно:
-
 - создать свой собственный дашборд;
 - импортировать готовый с [Grafana Dashboards](https://grafana.com/grafana/dashboards/).
 
  Пример запроса PromQL в панели:
-
 ```promql
 rate(http_requests_total[5m])
 ```
 
 Или:
-
 ```promql
 avg by (instance) (node_cpu_seconds_total{mode="idle"})
 ```
@@ -116,7 +110,6 @@ avg by (instance) (node_cpu_seconds_total{mode="idle"})
 |**HTTP Requests**|`rate(http_requests_total[1m])`|Скорость запросов к приложению|
 
 ##  Алерты в Grafana
-
 С версии **Grafana 8+** в неё встроена собственная система **Alerting** (раньше нужно было использовать Alertmanager Prometheus отдельно).
 
 - Можно создавать алерты прямо в панели (на основе запроса PromQL).
@@ -128,7 +121,6 @@ avg by (instance) (node_cpu_seconds_total{mode="idle"})
     - Webhook   
 
 Пример визуального правила:
-
 ```
 Если: avg(rate(http_requests_total[5m])) > 100
 в течение: 5m
@@ -138,25 +130,21 @@ avg by (instance) (node_cpu_seconds_total{mode="idle"})
 ##  Пример готового дашборда для Prometheus + Node Exporter
 
 Можно импортировать дашборд **ID 1860** (Node Exporter Full) из официального репозитория Grafana:
-
 - [https://grafana.com/grafana/dashboards/1860](https://grafana.com/grafana/dashboards/1860)
 
 Показывает:
-
 - CPU, RAM, Disk, Network
 - uptime, load average
 - и многое другое
 ##  Интеграция в Kubernetes
 
 Grafana часто устанавливается в Kubernetes через **Helm Chart**:
-
 ```bash
 helm repo add grafana https://grafana.github.io/helm-charts
 helm install my-grafana grafana/grafana
 ```
 
 И связывается с Prometheus, установленным, например, через **kube-prometheus-stack**, который содержит:
-
 - Prometheus
 - Alertmanager
 - Grafana
@@ -164,7 +152,6 @@ helm install my-grafana grafana/grafana
 - kube-state-metrics
 
 ##  Преимущества Grafana
-
  - Поддержка десятков источников данных  
  - Интерактивные дашборды  
  - Гибкие фильтры (templating variables)  
@@ -173,13 +160,11 @@ helm install my-grafana grafana/grafana
  - Open Source и Cloud-версия
 
 ##  Недостатки
-
  Хранит только настройки и дашборды (не метрики)  
  Требует знания PromQL для сложных панелей  
  Без внешней БД (Postgres/MySQL) — хранит настройки локально (SQLite)
 
 ##  Связка Prometheus + Grafana (итоговая схема)
-
 ```
         ┌─────────────┐
         │ Applications │

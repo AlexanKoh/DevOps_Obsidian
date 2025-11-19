@@ -8,17 +8,13 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ab626c5528d3d5b2",
+            "id": "6b54181ae72370ed",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "GitLab.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "GitLab"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Граф"
             }
           }
         ]
@@ -169,24 +165,25 @@
       "bases:Создать новую базу": false
     }
   },
-  "active": "ab626c5528d3d5b2",
+  "active": "6b54181ae72370ed",
   "lastOpenFiles": [
-    "DevOps.md",
+    "Git_GitHub.md",
     "GitLab.md",
-    "Vagrant.md",
-    "Kubernetes.md",
-    "Terraform.md",
+    "Docker.md",
+    "DevOps.md",
     "Ansible.md",
     "Базы данных.md",
-    "Grafana.md",
+    "Vagrant.md",
+    "Terraform.md",
     "Prometheus.md",
-    "Docker.md",
-    "Problems and Solutions (Linux and Networking).md",
     "Networking & Linux.md",
-    "Git_GitHub.md",
+    "Kubernetes.md",
+    "Helm.md",
+    "Grafana.md",
+    "Problems and Solutions (Linux and Networking).md",
+    "Nginx.md",
     "Git",
     "Без названия.md",
-    "Nginx.md",
     "().md",
     "Без названия 1.md"
   ]
